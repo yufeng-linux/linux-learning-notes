@@ -1,0 +1,3 @@
+o "Today I learned:" > ~/learning-linux/notes/day1-notes.txt
+echo "1. pwd - shows where I am" >> ~/learning-linux/notes/day1-notes.txt
+echo "2. ls - lists files" >> ~/learning-linux/notes/day1-notes.txt
