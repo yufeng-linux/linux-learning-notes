@@ -1,0 +1,14 @@
+
+Q
+q
+#
+ 进入我们的工作目录
+cd ~/learning-linux/test-files/
+
+# 1. 创建一个简单的日志文件模拟Web访问日志
+cat > web-access.log << EOF
+192.168.1.101 - - [01/Sep/2023:10:00:01] "GET /index.html HTTP/1.1" 200 1534
+192.168.1.102 - - [01/Sep/2023:10:00:02] "GET /about.html HTTP/1.1" 200 2451
+192.168.1.101 - - [01/Sep/2023:10:00:03] "POST /login.php HTTP/1.1" 302 -
+192.168.1.105 - - [01/Sep/2023:10:00:04] "GET /index.html HTTP/1.1" 200 1534
+192.168.1.101 - - [01/Sep/2023:10:00:05] "GET /admin.php HTTP/1.1" 403 211
